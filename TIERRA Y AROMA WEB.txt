@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tierra y Aroma - Jabones Artesanales</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #f8f5f0;
+      color: #3e2c1c;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1605478580708-9842c4c8a2d5?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 100px 20px;
+      color: white;
+    }
+    header h1 {
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #b18b5e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .producto {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+    .producto img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .producto h3 {
+      margin-top: 15px;
+      font-size: 1.3em;
+    }
+    .producto p {
+      font-size: 0.9em;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #b18b5e;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #8f6c45;
+    }
+    section.sobre {
+      background-color: #f1ece4;
+      padding: 60px 30px;
+      text-align: center;
+    }
+    section.contacto {
+      padding: 60px 30px;
+      text-align: center;
+    }
+    footer {
+      background-color: #3e2c1c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media(max-width:600px){
+      header h1 {font-size: 2em;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tierra y Aroma</h1>
+    <p>Jabones artesanales hechos con amor y naturaleza</p>
+    <a href="#tienda" class="btn">Explorar Tienda</a>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#tienda">Tienda</a>
+    <a href="#sobre">Sobre Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="tienda" class="productos">
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcc3a?auto=format&fit=crop&w=800&q=80" alt="Lavanda">
+      <h3>Lavanda Calmante</h3>
+      <p>Relaja cuerpo y mente con el aroma de la lavanda natural.</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1608219994535-5c647a04e3c1?auto=format&fit=crop&w=800&q=80" alt="Cítricos">
+      <h3>Cítricos Energizantes</h3>
+      <p>Frescura y vitalidad en cada baño. Ideal para empezar el día.</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1620662731642-b6e68cc8d7d1?auto=format&fit=crop&w=800&q=80" alt="Miel y Avena">
+      <h3>Miel y Avena</h3>
+      <p>Nutrición e hidratación para piel sensible y seca.</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h2>Sobre Tierra y Aroma</h2>
+    <p>En Tierra y Aroma creemos en el poder de lo natural. Nuestros jabones están elaborados a mano, con ingredientes 100% naturales, respetuosos con tu piel y el planeta.</p>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes un pedido personalizado o deseas hacer un regalo especial?</p>
+    <a href="https://wa.me/18090000000" target="_blank" class="btn">Escríbenos por WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Tierra y Aroma | Jabones Artesanales Hechos a Mano 🌿</p>
+  </footer>
+</body>
+</html>
